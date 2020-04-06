@@ -1,0 +1,11 @@
+##############################################
+#Marine Project Code                         #
+#Author: Oliver West                         #
+#Date: 06/04/2020                            #
+##############################################
+1.Create 2 folders entitled ~/MARS3D and ~/NORGAS.
+2.Run the following code in CMD, in the working directory.
+sudo wget --convert-links --no-parent -nd -nc -r -N -nH ftp://ftp.ifremer.fr/ifremer/sextant_data/MANGAE2500-AGRIF/MARC_F1-MARS3D-ARMOR/best_estimate/2018/
+
+Note: May be best to download a partial bit of the data set, as full dataset is 30gb+,
+however this may cause bugs as code has only been tested with full dataset.
