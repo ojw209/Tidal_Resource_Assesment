@@ -1,10 +1,20 @@
+##############################################
+#Read in Function 1 (MARS3D)                 #
+#And Bi                                      #
+#Author: Oliver West                         #
+#Date: 06/04/2020                            #
+##############################################
+
+#Function to convert rad 2 deg.
 rad2deg <- function(rad) {
   deg = (rad * 180) / (pi)
   deg = ifelse(deg < 0, deg + 360, deg)
 }
 
-deg2rad <- function(angle) {
-  rad = angle * (pi / 180)
+#Function to convert rad 2 deg, considers the angle of origin.
+rad2degfrom <- function(rad) {
+  deg = (rad * 180) / (pi) -180
+  deg = ifelse(deg < 0, deg + 360, deg)
 }
 
 #Function to read in NETCDF files

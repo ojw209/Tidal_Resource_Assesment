@@ -1,5 +1,5 @@
 ##############################################
-#Marine Project Code                         #
+#Main Marine Project Code with plots         #
 #Author: Oliver West                         #
 #Date: 06/04/2020                            #
 ##############################################

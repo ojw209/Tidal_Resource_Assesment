@@ -1,3 +1,11 @@
+##############################################
+#Read in Function 1 (NORGAS)                 #
+#And Bi                                      #
+#Author: Oliver West                         #
+#Date: 06/04/2020                            #
+##############################################
+
+
 NC_READ_IN_2 <- function(M_Start, M_END, READ_START, READ_COUNT) {
   i = 1
   folder_path = "NORGAS/"
