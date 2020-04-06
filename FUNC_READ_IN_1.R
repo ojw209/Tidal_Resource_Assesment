@@ -3,6 +3,10 @@ rad2deg <- function(rad) {
   deg = ifelse(deg < 0, deg + 360, deg)
 }
 
+deg2rad <- function(angle) {
+  rad = angle * (pi / 180)
+}
+
 #Function to read in NETCDF files
 NC_READ_IN <-function(M_Start,M_END,READ_START,READ_COUNT,DEPTH) {
     i = 1
@@ -82,5 +86,6 @@ NC_READ_IN <-function(M_Start,M_END,READ_START,READ_COUNT,DEPTH) {
     Lat_grid_Rast =  FILE_N %>% raster(., varname = "latitude") %>% crop(y = ALD_EXTENT)
     return = list(Long_grid_Rast,Lat_grid_Rast,Vel_U_Rast, Vel_V_Rast,Depth_Rast)
   }
+
 
 
